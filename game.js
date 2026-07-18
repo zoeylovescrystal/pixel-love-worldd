@@ -138,9 +138,18 @@ function gameLoop(){
 
          drawSky();
 
-       drawFlowers();
+       drawGround();
+     
+       drawTrees();
         
-        drawAnimals();
+      drawFlowers();
+        
+      drawAnimals();
+        
+      drawLetters();
+        
+       drawplayer();
+        
               function drawTrees(){
 
 for(const tree of trees){
