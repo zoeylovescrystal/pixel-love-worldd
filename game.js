@@ -139,6 +139,8 @@ function gameLoop(){
          drawSky();
 
        drawGround();
+        
+        drawClouds();
      
        drawTrees();
         function drawClouds(){
