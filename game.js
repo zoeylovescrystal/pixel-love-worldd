@@ -142,6 +142,8 @@ function gameLoop(){
         
         drawAnimals();
                 
+        drawLetters();
+
         drawPlayer();
         
        checkLetters(); 
