@@ -136,9 +136,13 @@ function gameLoop(){
 
         movePlayer();
 
-        drawSky();
+         drawSky();
 
-        drawGround();
+       drawFlowers();
+        
+        drawAnimals();
+        
+        drawPlayer();
 
         drawPlayer();
 
