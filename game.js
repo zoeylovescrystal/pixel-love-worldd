@@ -141,7 +141,19 @@ function gameLoop(){
        drawGround();
      
        drawTrees();
-        
+        function drawClouds(){
+
+ctx.font="60px serif";
+
+ctx.fillText("☁️",-camera.x*0.2+100,80);
+
+ctx.fillText("☁️",-camera.x*0.2+500,150);
+
+ctx.fillText("☁️",-camera.x*0.2+900,100);
+
+ctx.fillText("☁️",-camera.x*0.2+1400,170);
+
+}
       drawFlowers();
         
       drawAnimals();
