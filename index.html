@@ -1,8 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!doctype html><html><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="style.css"><title>Pixel Love World</title>
-</head><body>
-<div id="ui">💜 Use Arrow Keys/WASD to explore!</div>
-<div id="world"><div id="player">🩷</div><div id="msg"></div></div>
-<script src="script.js"></script></body></html>
+<title>Crystal's Secret Garden 💖</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div id="loadingScreen">
+    <div class="loadingBox">
+        <h1>🌸 Crystal's Secret Garden 🌸</h1>
+
+        <p>
+            Welcome, Baby ❤️
+        </p>
+
+        <p>
+            I made a tiny world just for you.
+            Wander around, meet adorable animals,
+            and discover the little love letters I've hidden everywhere.
+        </p>
+
+        <button id="startButton">
+            Start Adventure ✨
+        </button>
+    </div>
+</div>
+
+<canvas id="gameCanvas"></canvas>
+
+<div id="ui">
+
+    <div id="counter">
+        💌 Letters Found:
+        <span id="letterCount">0</span>/20
+    </div>
+
+</div>
+
+<div id="popup" class="hidden">
+
+    <div class="popupCard">
+
+        <h2>💖 Hidden Letter</h2>
+
+        <p id="letterText">
+            Letter text appears here...
+        </p>
+
+        <button id="closeLetter">
+            Continue Exploring 🌸
+        </button>
+
+    </div>
+
+</div>
+
+<div id="ending" class="hidden">
+
+    <div class="endingCard">
+
+        <h1>You Found Every Letter 💖</h1>
+
+        <p>
+            My dearest Crystal,
+        </p>
+
+        <p>
+            If you've reached this place,
+            you've found every little piece of my heart hidden around this world.
+        </p>
+
+        <p>
+            Thank you for exploring this tiny adventure I made for you.
+            I hope it reminded you how deeply you're loved.
+        </p>
+
+        <p>
+            No matter where life takes us,
+            you'll always be my Crystal,
+            my baby,
+            and my love.
+        </p>
+
+        <h2>❤️ Forever Yours ❤️</h2>
+
+    </div>
+
+</div>
+
+<script src="world.js"></script>
+<script src="game.js"></script>
+
+</body>
+</html>
