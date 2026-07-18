@@ -44,3 +44,17 @@ text:"You are my favorite person, Crystal. Thank you for being you. ❤️"
 }
 
 ];
+const trees=[
+
+{x:150,y:150},
+{x:500,y:100},
+{x:900,y:250},
+{x:1200,y:100},
+{x:1600,y:400},
+{x:2000,y:250},
+{x:2400,y:500},
+{x:2800,y:700},
+{x:3200,y:450},
+{x:3500,y:850}
+
+];
