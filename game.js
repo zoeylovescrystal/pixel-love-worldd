@@ -141,16 +141,49 @@ function gameLoop(){
        drawFlowers();
         
         drawAnimals();
+                
+        drawPlayer();
         
-        drawPlayer();
-
-        drawPlayer();
+       checkLetters(); 
 
     }
 
     requestAnimationFrame(gameLoop);
 
+}let foundLetters = [];
+
+function checkLetters(){
+
+for(let i=0;i<letters.length;i++){
+
+const letter=letters[i];
+
+const dx=player.x-letter.x;
+const dy=player.y-letter.y;
+
+const distance=Math.sqrt(dx*dx+dy*dy);
+
+if(distance<45 && !foundLetters.includes(i)){
+
+foundLetters.push(i);
+
+document.getElementById("letterCount").textContent=foundLetters.length;
+
+document.getElementById("letterText").textContent=letter.text;
+
+document.getElementById("popup").classList.remove("hidden");
+
 }
+
+}
+
+}
+
+document.getElementById("closeLetter").onclick=()=>{
+
+document.getElementById("popup").classList.add("hidden");
+
+};
 
 gameLoop();
 
