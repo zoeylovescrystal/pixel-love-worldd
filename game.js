@@ -193,3 +193,22 @@ canvas.width=window.innerWidth;
 canvas.height=window.innerHeight;
 
 };
+function drawLetters(){
+
+for(const letter of letters){
+
+ctx.font="28px serif";
+ctx.fillText("💌",letter.x-camera.x,letter.y-camera.y);
+
+}
+
+function drawLetters(){
+
+for(const letter of letters){
+
+ctx.font="28px serif";
+ctx.fillText("💌",letter.x-camera.x,letter.y-camera.y);
+
+}
+
+}
