@@ -102,6 +102,32 @@ function drawPlayer(){
     ctx.arc(canvas.width/2+5,canvas.height/2-3,2,0,Math.PI*2);
     ctx.fill();
 
+}function drawFlowers(){
+
+for(const flower of flowers){
+
+const x=flower.x-camera.x;
+const y=flower.y-camera.y;
+
+ctx.font="28px serif";
+ctx.fillText("🌸",x,y);
+
+}
+
+}
+
+function drawAnimals(){
+
+for(const animal of animals){
+
+const x=animal.x-camera.x;
+const y=animal.y-camera.y;
+
+ctx.font="34px serif";
+ctx.fillText(animal.type,x,y);
+
+}
+
 }
 
 function gameLoop(){
