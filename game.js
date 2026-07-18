@@ -141,7 +141,19 @@ function gameLoop(){
        drawFlowers();
         
         drawAnimals();
-                
+              function drawTrees(){
+
+for(const tree of trees){
+
+const x=tree.x-camera.x;
+const y=tree.y-camera.y;
+
+ctx.font="48px serif";
+ctx.fillText("🌳",x,y);
+
+}
+
+}  
         drawLetters();
 
         drawPlayer();
